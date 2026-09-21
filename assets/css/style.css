@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(115, 208, 177);
+}
+.row{
+    color: black;
+}
+.card-body{
+    background-color: gold;
+    border-color: brown;
+}

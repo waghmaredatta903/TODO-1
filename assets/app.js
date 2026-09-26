@@ -13,7 +13,7 @@ var cl = console.log;
 
 // localStorage.setItem('todoArr', JSON.stringify(todoArr))
 
-let todoArr = JSON.parse(localStorage.getItem('todoArr'))
+let todoArr = JSON.parse(localStorage.getItem('todoArr'))||[]
 
 let todoForm = document.getElementById("todoForm");
 let inputTodo = document.getElementById("inputTodo");
@@ -130,12 +130,7 @@ function onUpdatetodo() {
     addBtn.classList.remove("d-none")
     updateBtn.classList.add("d-none")
 
-    Swal.fire({
-        title: `UPDATE Todo Successfully`,
-        text: `Your Todo Update has been Successfully`,
-        icon: `success`,
-        timer: 1500
-    })
+           snackBar(`"Todo is updateted Successfully"`, "success")
 
 }
 
